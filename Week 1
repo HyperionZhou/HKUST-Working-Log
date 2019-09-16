@@ -1,0 +1,36 @@
+Working Plan:
+1. Building Singularity Container with required libraries.
+2. Read Attention Papers' note.
+
+Finished Targets:
+1. Prepare basic working enviroments like WiFi and server's authority.
+2. Read Singularity documents. Write Singularity Definition File.
+3. Use AWS to build Singularity Container.
+
+Tackled Problems:
+￼Problem(P):
+Unable to locate package python3-pip
+￼Solution(S):
+add-apt-repository universe
+
+P:
+add-apt-repository: not found
+S:
+apt-get install software-properties-common
+￼
+P:
+pip3 install --upgrade pip3
+S:
+change to pip3 install -upgrade pip
+￼
+P:
+pip3 install numpy
+
+from pip import main
+ImportError: cannot import name 'main'
+
+S:
+Modify '/usr/bin/pip3' via shell command.
+However, it doesn't work if I modify the file 'pip3'.
+Finally deleted 'pip3 install --upgrade pip'.
+From: https://stackoverflow.com/questions/49836676/error-after-upgrading-pip-cannot-import-name-main
