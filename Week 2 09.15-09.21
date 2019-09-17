@@ -1,7 +1,13 @@
 Planning
 
+Day1:
+Build a singularity container with libraries include PyTorch, Tensorflow, numpy, pandas, and so on.
+Day2:
+1)insert tensorflow-gpu into docker and do whole process locally
+2) update slide files 
+3) experiemnt bert or gpt (or other NLM pretrained model ) by pycharm & singularity
 
-Done
+Done:
 
 
 Tackled Problems:
